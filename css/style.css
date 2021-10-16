@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#visor{
+  margin: 2% 0;
+}
+#visorResult{
+  width: 30vw;
+  height: 2.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 5px;
+}
+#buttons div{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 5%);
+  gap: 2px 3px;
+}
+#buttons div button{
+  padding: 2.3em;
+  border: none;
+  background-color: #464646;
+  color: #fff;
+  font-size: .8em;
+  font-weight: 900;
+}
+#buttons div button:hover{
+  background-color: #666666;
+}
+#buttons div button:active{
+  transform: translateY(4px);
+}
